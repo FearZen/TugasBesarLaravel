@@ -39,7 +39,8 @@
     // });
 
     // Fungsi untuk menangani klik pada menu Keanggotaan
-    $(".keanggotaan-menu").click(function () {
+    $(".keanggotaan-menu").click(function () 
+    {
         window.location.href = "/keanggotaan";
     });
 
