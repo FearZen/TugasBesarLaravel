@@ -29,6 +29,25 @@
             word-wrap: break-word;
         }
     </style>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
+    $(document).ready(function () {
+    // Fungsi untuk menangani klik pada menu Dashboard
+    // $(".dashboard-menu").click(function () {
+    //     // Tambahkan logika atau navigasi yang sesuai untuk menu Dashboard di sini
+    //     alert("Menu Dashboard diklik");
+    // });
+
+    // Fungsi untuk menangani klik pada menu Keanggotaan
+    $(".keanggotaan-menu").click(function () {
+        window.location.href = "/keanggotaan";
+    });
+
+    // Tambahkan fungsi serupa untuk menu-menu lainnya
+    // ...
+});
+
+</script>
     <div style="width: 100%; height: 115px; background: white; box-shadow: 5px 4px 10px rgba(0, 0, 0, 0.15); position: absolute; right: 0;"></div>
 
 
