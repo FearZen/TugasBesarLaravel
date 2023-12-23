@@ -1,0 +1,47 @@
+
+        body {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden; /* Prevent horizontal scroll */
+        }
+
+        .container {
+            max-width: 1440px; /* Set your desired maximum width */
+            margin: 0 auto; /* Center the container */
+        }
+        .dropdown {
+            position: absolute;
+            background-color: white;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            display: none; /* Initially hide the dropdown */
+        }
+/* Tambahkan gaya CSS sesuai kebutuhan Anda */
+
+.icon-container {
+    width: 31px;
+    height: 33px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+.icon-container i {
+    font-size: 24px; /* Sesuaikan ukuran ikon sesuai kebutuhan */
+}
+
+/* Contoh gaya untuk teks di sebelah ikon */
+.text-container {
+    left: 100px;
+    top: 249px;
+    position: absolute;
+    color: #1E1E1E;
+    font-size: 24px;
+    font-family: Gowun Dodum;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+/* Add other styles as needed */
+

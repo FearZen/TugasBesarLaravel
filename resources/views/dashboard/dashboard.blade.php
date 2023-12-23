@@ -28,21 +28,27 @@
             font-weight: 400;
             word-wrap: break-word;
         }
+        .dropdown {
+        position: absolute;
+        background-color: white;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        display: none; /* Sembunyikan dropdown secara default */
+    }
     </style>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script>
     $(document).ready(function () {
-    // Fungsi untuk menangani klik pada menu Dashboard
-    // $(".dashboard-menu").click(function () {
-    //     // Tambahkan logika atau navigasi yang sesuai untuk menu Dashboard di sini
-    //     alert("Menu Dashboard diklik");
-    // });
+        // Fungsi untuk menangani klik pada menu Keanggotaan
+        $(".keanggotaan-menu").click(function () {
+            console.log("Menu Keanggotaan diklik");
+            window.location.href = "/keanggotaan";
+        });
 
-    // Fungsi untuk menangani klik pada menu Keanggotaan
-    $(".keanggotaan-menu").click(function () 
-    {
-        window.location.href = "/keanggotaan";
-    });
+        // Dropdown Keanggotaan
+        $("#keanggotaanIcon").hover(function () {
+            $("#dropdownKeanggotaan").toggle();
+        });
 
     // Tambahkan fungsi serupa untuk menu-menu lainnya
     // ...
@@ -59,11 +65,26 @@
     </div>
     <div class="text-container" style="left: 100px; top: 178px; color: #FF5054;">Dashboard</div>
 
-    <!-- Keanggotaan -->
-    <div class="icon-container" style="left: 41px; top: 249px;">
-        <i class="fas fa-user" style="color: #FEB1B3;"></i>
-    </div>
-    <div class="text-container" style="left: 100px; top: 249px; color: #1E1E1E;">Keanggotaan</div>
+    <!-- Icon dan teks Keanggotaan -->
+<!-- Icon dan teks Keanggotaan -->
+<div id="keanggotaanIcon" class="icon-container" style="left: 41px; top: 249px;">
+    <i class="fas fa-user" style="color: #FEB1B3;"></i>
+</div>
+<div class="text-container" style="left: 100px; top: 249px; color: #1E1E1E;">Keanggotaan</div>
+
+<!-- Dropdown Keanggotaan -->
+<div id="dropdownKeanggotaan" class="dropdown" style="position: absolute; left: 100px; top: 288px;">
+    <div style="color: #FF5054; font-size: 24px; font-family: Gowun Dodum; font-weight: 400; word-wrap: break-word">Perguruan Tinggi</div>
+    <div style="width: 267px; height: 0px; border: 1px #CB4649 solid"></div>
+    <div style="color: #1E1E1E; font-size: 24px; font-family: Gowun Dodum; font-weight: 400; word-wrap: break-word">Lembaga Pemerintah</div>
+    <div style="width: 267px; height: 0px; border: 1px #CB4649 solid"></div>
+    <div style="color: #1E1E1E; font-size: 24px; font-family: Gowun Dodum; font-weight: 400; word-wrap: break-word">Organisasi Profesi</div>
+    <div style="width: 267px; height: 0px; border: 1px #CB4649 solid"></div>
+    <div style="color: #1E1E1E; font-size: 24px; font-family: Gowun Dodum; font-weight: 400; word-wrap: break-word">Delegasi Nasional</div>
+    <div style="width: 267px; height: 0px; border: 1px #CB4649 solid"></div>
+</div>
+
+
 
     <!-- Nomor Anggota -->
     <div style="left: 828px; top: 255px; position: absolute; color: #323232; font-size: 23px; font-family: Gowun Dodum; font-weight: 400; word-wrap: break-word">
@@ -112,7 +133,7 @@
     </div>
     <div class="text-container" style="left: 100px; top: 793px; color: #1E1E1E;">Biodata</div>
 
-    <!-- Data saya -->
+    <!-- Data saya --> 
     <div class="icon-container" style="left: 41px; top: 872px;">
     <i class="fas fa-solid fa-database" style="color: #FEB1B3;"></i>
     </div>

@@ -1,0 +1,106 @@
+/* Tambahkan CSS ini ke dalam login.css Anda */
+
+.clear-button {
+    cursor: pointer;
+    width: 18.67px;
+    height: 18.67px;
+    position: absolute;
+    right: 10px; /* Sesuaikan dengan kebutuhan Anda */
+    top: 50%; /* Sesuaikan dengan kebutuhan Anda */
+    transform: translateY(-50%);
+}
+
+#togglePassword {
+    font-size: 18px;
+    color: #1E1E1E;
+    position: absolute;
+    right: 10px; /* Sesuaikan dengan kebutuhan Anda */
+    top: 50%; /* Sesuaikan dengan kebutuhan Anda */
+    transform: translateY(-50%);
+}
+
+/* Tambahkan CSS ini ke dalam login.css Anda */
+
+.form-container {
+    position: absolute;
+    right: 380px; /* Menggunakan right agar berada di sebelah kanan */
+    top: 50%;
+    transform: translate(50%, -50%); /* Menggunakan transform agar tetap di tengah secara vertikal */
+    width: 492px;
+    padding: 20px;
+}
+
+.form-container div {
+    margin-bottom: 20px;
+    color: #1E1E1E;
+    font-size: 24px;
+    font-family: 'Fredoka One', sans-serif;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+.form-container input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: #FFDADB;
+    border-radius: 30px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.clear-button {
+    cursor: pointer;
+    width: 18.67px;
+    height: 18.67px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#clearEmil {
+    font-size: 18px;
+    color: #1E1E1E;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#togglePassword {
+    font-size: 18px;
+    color: #1E1E1E;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.placeholder-text {
+    position: absolute;
+    color: rgba(63, 35, 5, 0.50);
+    font-size: 20px;
+    font-family: 'Gowun Dodum', sans-serif;
+    font-weight: 400;
+    word-wrap: break-word;
+    display: block;
+    margin-top: 10px;
+}
+
+.submit-button {
+    width: 311px; /* Sesuaikan lebar tombol dengan kebutuhan Anda */
+    height: 57px; /* Sesuaikan tinggi tombol dengan kebutuhan Anda */
+    position: absolute;
+    top: 400px; /* Sesuaikan dengan tinggi dari atas */
+    right: 90px; /* Sesuaikan dengan jarak dari kanan */
+    background: #CB4649;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    color: white;
+    font-size: 24px;
+    font-family: 'Fredoka One', sans-serif;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+

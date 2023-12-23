@@ -15,4 +15,7 @@ Route::get('/dashboard', function () {
     return view('dashboard.dashboard');
 });
 Route::get('/keanggotaan', [KeanggotaanController::class, 'index']);
+Route::get('/PerguruanTinggi', function () {
+    return view('dashboard.perguruanTinggi');
+});
 
