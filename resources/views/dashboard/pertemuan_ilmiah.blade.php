@@ -73,7 +73,7 @@ $(document).ready(function () {
 <!-- <div style="width: 1440px; height: 1709px; position: relative; background: white"> -->
   <div style="width: 386.50px; height: 194.50px; left: 1142px; top: 81px; position: absolute">
     <div style="width: 276px; height: 85px; left: 0px; top: 0px; position: absolute; background: #CB4649; border-radius: 60px"></div>
-    <div style="left: 35px; top: 35px; position: absolute; color: white; font-size: 29px; font-family: Fredoka One; font-weight: 400; word-wrap: break-word">Perguruan Tinggi</div>
+    <div style="left: 35px; top: 35px; position: absolute; color: white; font-size: 29px; font-family: Fredoka One; font-weight: 400; word-wrap: break-word">Pertemuan Ilmiah</div>
     <div style="width: 100px; height: 100px; left: 286.50px; top: 94.50px; position: absolute"></div>
   </div>
   <div style="width: 1440px; height: 110px;right: 0px; left: 0px; top: 1599px; position: absolute">
@@ -89,7 +89,7 @@ $(document).ready(function () {
   </div>
   <div class="text-container" style="left: 100px; top: 184px; color: #1E1E1E;">Dashboard</div>
 
-  <!-- Perwakilan -->
+ <!-- Perwakilan -->
 <a href="{{ route('perwakilan') }}" style="text-decoration: none; color: inherit;">
     <div class="icon-container" style="left: 41px; top: 323px;">
         <i class="fas fa-building" style="color: #FEB1B3;"></i>
@@ -100,9 +100,9 @@ $(document).ready(function () {
     <!-- Pertemuan Ilmiah -->
 <a href="{{ route('pertemuan_ilmiah') }}" style="text-decoration: none; color: inherit;">
     <div class="icon-container" style="left: 41px; top: 402px;">
-        <i class="fas fa-book" style="color: #FEB1B3;"></i>
+        <i class="fas fa-book" style="color: #FF5054;"></i>
     </div>
-    <div class="text-container" style="left: 100px; top: 402px; color: #1E1E1E;">Pertemuan Ilmiah</div>
+    <div class="text-container" style="left: 100px; top: 402px; color: #FF5054;">Pertemuan Ilmiah</div>
 </a>
 
 <!-- Penghargaan/Tanda Jasa -->
@@ -152,20 +152,21 @@ $(document).ready(function () {
     </div>
     <div class="text-container" style="left: 100px; top: 872px; color: #1E1E1E; font-size: 24px; font-family: Gowun Dodum; font-weight: 400; word-wrap: break-word;">Data Saya</div>
 </a>
+
   <img style="width: 78px; height: 78px; position: absolute; border-radius: 50px; border: 4px #1E1E1E solid; top: 10px; right: 10px; z-index: 100;" src="https://via.placeholder.com/78x78" />
 
   <img style="width: 131px; height: 67px; left: 209px; top: 22px; position: absolute; box-shadow: 0px 4px 1px rgba(0, 0, 0, 0.05)" src="{{ asset('images/Logo prestasi.png') }}" />
   <div id="keanggotaanIcon" class="icon-container" style="left: 41px; top: 249px;">
-    <i class="fas fa-user" style="color: #FF5054;"></i>
+    <i class="fas fa-user" style="color: #FEB1B3;"></i>
 </div>
 <!-- <div id="keanggotaanIcon" class="icon-container" style="left: 61px; top: 249px;" >
     <i class="fas fa-user" style="color: #FEB1B3;"></i>
 </div> -->
-<div class="text-container" style="left: 100px; top: 249px; color: #FF5054;" >Keanggotaan</div>
+<div class="text-container" style="left: 100px; top: 249px; color: #1E1E1E;" >Keanggotaan</div>
 
 <!-- Dropdown Keanggotaan -->
 <div id="dropdownKeanggotaan" class="dropdown" style="position: absolute; left: 100px; top: 288px;">
-<div class="dropdown-menu-item" id="perguruanTinggi" data-target="{{ route('perguruan-tinggi.index') }}" style="color: #FF5054; font-size: 24px; font-family: Gowun Dodum; font-weight: 400; word-wrap: break-word">Perguruan Tinggi</div>
+<div class="dropdown-menu-item" id="perguruanTinggi" data-target="{{ route('perguruan-tinggi.index') }}" style="color: #1E1E1E; font-size: 24px; font-family: Gowun Dodum; font-weight: 400; word-wrap: break-word">Perguruan Tinggi</div>
     <div style="width: 267px; height: 0px; border: 1px #CB4649 solid"></div>
     <div class="dropdown-menu-item" id="lembagaPemerintah"  style="color: #1E1E1E; font-size: 24px; font-family: Gowun Dodum; font-weight: 400; word-wrap: break-word">Lembaga Pemerintah</div>
     <div style="width: 267px; height: 0px; border: 1px #CB4649 solid"></div>
@@ -179,28 +180,28 @@ $(document).ready(function () {
   <form action="{{ route('submit_form') }}" method="post">
     @csrf
 
-<!-- Peran dalam Panitia/Badan -->
+    <!-- Jenis Kegiatan -->
 <div style="left: 507px; top: 189px; position: absolute; color: #1E1E1E; font-size: 24px; font-family: Gowun Dodum; font-weight: 400; word-wrap: break-word; margin-bottom: 20px;">
-    <label for="peran_panitia">Peran dalam Panitia/Badan:</label>
-    <input type="text" id="peran_panitia" name="peran_panitia" placeholder="Cari Peran" style="width: 100%; height: 40px; font-size: 18px; padding: 10px; border: 1px solid #ddd; border-radius: 5px;">
+    <label for="peran_panitia">Jenis Kegiatan</label>
+    <input type="text" id="peran_panitia" name="peran_panitia" placeholder="Seminar, Workshop, Pelatihan, Guest Lecture, dll." style="width: 100%; height: 40px; font-size: 18px; padding: 10px; border: 1px solid #ddd; border-radius: 5px;">
 </div>
 
-<!-- Nama Panitia/Badan -->
+<!-- Tingkat Kegiatan -->
 <div style="left: 507px; top: 298px; position: absolute; color: #1E1E1E; font-size: 24px; font-family: Gowun Dodum; font-weight: 400; word-wrap: break-word; margin-bottom: 20px;">
-    <label for="nama_panitia">Nama Panitia/Badan:</label>
-    <input type="text" id="nama_panitia" name="nama_panitia" placeholder="Nama Panitia/Badan" style="width: 100%; height: 40px; font-size: 18px; padding: 10px; border: 1px solid #ddd; border-radius: 5px;">
+    <label for="nama_panitia">Tingkat Kegiatan</label>
+    <input type="text" id="nama_panitia" name="nama_panitia" placeholder="Internasional, Nasional, Regional, Perguruan Tinggi, dll." style="width: 100%; height: 40px; font-size: 18px; padding: 10px; border: 1px solid #ddd; border-radius: 5px;">
 </div>
 
-<!-- Rangkap Panitia/Badan -->
+<!-- Nama Kegiatan -->
 <div style="left: 507px; top: 400px; position: absolute; color: #1E1E1E; font-size: 24px; font-family: Gowun Dodum; font-weight: 400; word-wrap: break-word; margin-bottom: 20px;">
-    <label for="rangkap_panitia">Rangkap Panitia/Badan:</label>
-    <input type="text" id="rangkap_panitia" name="rangkap_panitia" placeholder="Misalnya, sebagai ketua merangkap anggota" style="width: 100%; height: 40px; font-size: 18px; padding: 10px; border: 1px solid #ddd; border-radius: 5px;">
+    <label for="rangkap_panitia">Nama Kegiatan</label>
+    <input type="text" id="rangkap_panitia" name="rangkap_panitia" placeholder="Program Pascasarjana.." style="width: 100%; height: 40px; font-size: 18px; padding: 10px; border: 1px solid #ddd; border-radius: 5px;">
 </div>
 
-<!-- Tahun Kepanitiaan -->
+<!-- Peran -->
 <div style="left: 507px; top: 500px; position: absolute; color: #1E1E1E; font-size: 24px; font-family: Gowun Dodum; font-weight: 400; word-wrap: break-word; margin-bottom: 20px;">
-    <label for="tahun_kepanitiaan">Tahun Kepanitiaan:</label>
-    <input type="text" id="tahun_kepanitiaan" name="tahun_kepanitiaan" placeholder="Tahun Kepanitiaan" style="width: 100%; height: 40px; font-size: 18px; padding: 10px; border: 1px solid #ddd; border-radius: 5px;">
+    <label for="tahun_kepanitiaan">Peran</label>
+    <input type="text" id="tahun_kepanitiaan" name="tahun_kepanitiaan" placeholder="Ketua" style="width: 100%; height: 40px; font-size: 18px; padding: 10px; border: 1px solid #ddd; border-radius: 5px;">
 </div>
 
 <!-- Keterangan Kegiatan -->
@@ -209,7 +210,7 @@ $(document).ready(function () {
     <textarea id="keterangan_kegiatan" name="keterangan_kegiatan" rows="4" placeholder="Deskripsi kegiatan" style="width: 100%; font-size: 18px; padding: 10px; border: 1px solid #ddd; border-radius: 5px;"></textarea>
 </div>
 
-<!-- Tanggal Kegiatan -->
+<!-- Tanggal Kegiatan  -->
 <div style="left: 507px; top: 837px; position: absolute; color: #1E1E1E; font-size: 24px; font-family: Gowun Dodum; font-weight: 400; word-wrap: break-word; margin-bottom: 30px;">
     <label for="tanggal_kegiatan">Tanggal Kegiatan:</label>
     <input type="text" id="tanggal_kegiatan" name="tanggal_kegiatan" placeholder="mm/dd/yyyy" style="width: 100%; height: 40px; font-size: 18px; padding: 10px; border: 1px solid #ddd; border-radius: 5px;">
@@ -254,16 +255,6 @@ $(document).ready(function () {
         <input type="file" id="file_upload" name="file_upload" accept="image/*" style="display: none;">
     </div>
 </div>
-
-
-
-
-
-
-
-
-
-
 
     <!-- Your existing submit button -->
     <div style="width: 300px; height: 80px; left: 1202px; top: 1494px; position: absolute;">
