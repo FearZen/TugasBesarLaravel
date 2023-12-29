@@ -27,4 +27,7 @@ Route::get('/olahraga-humainora', [dashController::class, 'olahragaHumainora'])-
 Route::get('/tim-penilaian', [dashController::class, 'timPenilaian'])->name('tim_penilaian');
 Route::get('/biodata', [dashController::class, 'biodata'])->name('biodata');
 Route::get('/data-saya', [dashController::class, 'dataSaya'])->name('data_saya');
+Route::get('/submit', function () {
+    return view('dashboard.submit');
+});
 

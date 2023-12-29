@@ -13,7 +13,7 @@ class AuthController extends Controller
 
         if (Auth::attempt($credentials)) {
             // Otentikasi berhasil
-            return redirect()->route('halaman_selanjutnya');
+            return redirect()->route('dashboard.dashboard');
         }
 
         // Otentikasi gagal
