@@ -53,7 +53,7 @@ class dashController extends Controller
     public function dataSaya()
     {
         // Logika dan pengolahan data untuk rute /data-saya
-        return view('data_saya');
+        return view('dashboard.data_saya');
     }
 }
 
