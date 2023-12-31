@@ -254,18 +254,6 @@ $(document).ready(function () {
         <input type="file" id="file_upload" name="file_upload" accept="image/*" style="display: none;">
     </div>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-    <!-- Your existing submit button -->
     <div style="width: 300px; height: 80px; left: 1202px; top: 1494px; position: absolute;">
     <button type="submit" style="background-color: #CB4649; color: white; padding: 15px 30px; font-size: 20px; border: none; border-radius: 20px; cursor: pointer; display: flex; align-items: center;">
         <i class="far fa-paper-plane" style="color: white; font-size: 30px; margin-right: 15px;"></i>

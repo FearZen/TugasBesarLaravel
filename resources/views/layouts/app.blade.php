@@ -40,9 +40,9 @@
 </script> -->
 </head>
 <body>
-    <div class="container">
+
         @yield('content')
-    </div>
+   
     <!-- Example dropdown content -->
         <!-- <div id="keanggotaanIcon" class="icon-container" style="left: 41px; top: 249px;">
             <i class="fas fa-user" style="color: #FEB1B3;"></i>
@@ -66,5 +66,6 @@
             });
         });
     </script> -->
+    
 </body>
 </html>

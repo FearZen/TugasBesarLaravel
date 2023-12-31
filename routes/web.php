@@ -4,19 +4,16 @@ use App\Http\Controllers\Auth\LoginController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\KeanggotaanController;
 use App\Http\Controllers\PerguruanTinggiController;
-use App\Http\Controllers\dashController; // Gantilah dashController dengan nama controller yang sesuai
+use App\Http\Controllers\dashController; 
+use App\Http\Controllers\DashboardController;
 Route::get('/', function () {
     return view('halaman_depan');
 });
 
-// Menggunakan Controller dari namespace Auth
 Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login');
 Route::post('/login', [LoginController::class, 'login']);
-Route::get('/dashboard', function () {
-    return view('dashboard.dashboard');
-});
+Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
 Route::get('/keanggotaan', [KeanggotaanController::class, 'index']);
-// web.php atau routes file lainnya
 Route::get('/PerguruanTinggi', [PerguruanTinggiController::class, 'index'])->name('perguruan-tinggi.index');
 Route::post('/submit-form', [FormController::class, 'submitForm'])->name('submit_form');
 Route::get('/perwakilan', [dashController::class, 'perwakilan'])->name('perwakilan');

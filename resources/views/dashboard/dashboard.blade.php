@@ -98,6 +98,7 @@
 
     <div style="width: 454px; height: 1728px; background: white; box-shadow: 5px 35px 10px rgba(112.62, 110.65, 110.65, 0.15)"></div>
   <img style="width: 166px; height: 101px; left: 17px; top: 13px; position: absolute" src="{{ asset('images/logo umm.jpg') }}" />
+  
   <!-- Dashboard -->
   <div class="icon-container" style="left: 41px; top: 178px;">
         <i class="fas fa-tachometer-alt" style="color: #FF5054;"></i>
