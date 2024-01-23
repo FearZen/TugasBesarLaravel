@@ -87,9 +87,13 @@ $(document).ready(function () {
   <div id="dashboardIcon" class="icon-container" style="left: 41px; top: 178px;">
       <i class="fas fa-tachometer-alt" style="color: #FEB1B3;"></i>
   </div>
+<<<<<<< HEAD
   <a href="/dashboard" style="text-decoration: none; color: inherit;">
     <div class="text-container" style="left: 100px; top: 184px; color: #1E1E1E;">Dashboard</div>
   </a>
+=======
+  <div class="text-container" style="left: 100px; top: 184px; color: #1E1E1E;">Dashboard</div>
+>>>>>>> 528c133d59d60c5091aa05d1a319cc5f3336e52f
 
  <!-- Perwakilan -->
 <a href="{{ route('perwakilan') }}" style="text-decoration: none; color: inherit;">
@@ -179,31 +183,55 @@ $(document).ready(function () {
 </div>
   
   <!-- Form Section -->
+<<<<<<< HEAD
   <form action="{{ route('submit_tim_penilaian') }}" method="post" enctype="multipart/form-data">
+=======
+  <form action="{{ route('submit_form') }}" method="post">
+>>>>>>> 528c133d59d60c5091aa05d1a319cc5f3336e52f
     @csrf
 
     <!-- Tahun Akademik -->
 <div style="left: 507px; top: 189px; position: absolute; color: #1E1E1E; font-size: 24px; font-family: Gowun Dodum; font-weight: 400; word-wrap: break-word; margin-bottom: 20px;">
+<<<<<<< HEAD
     <label for="tahun_akademik">Tahun Akademik</label>
     <input type="text" id="tahun_akademik" name="tahun_akademik" placeholder="2023/2024" style="width: 100%; height: 40px; font-size: 18px; padding: 10px; border: 1px solid #ddd; border-radius: 5px;">
+=======
+    <label for="peran_panitia">Tahun Akademik</label>
+    <input type="text" id="peran_panitia" name="peran_panitia" placeholder="2023/2024" style="width: 100%; height: 40px; font-size: 18px; padding: 10px; border: 1px solid #ddd; border-radius: 5px;">
+>>>>>>> 528c133d59d60c5091aa05d1a319cc5f3336e52f
 </div>
 
 <!-- Semester -->
 <div style="left: 507px; top: 298px; position: absolute; color: #1E1E1E; font-size: 24px; font-family: Gowun Dodum; font-weight: 400; word-wrap: break-word; margin-bottom: 20px;">
+<<<<<<< HEAD
     <label for="semester">Semester</label>
     <input type="text" id="semester" name="semester" placeholder="Semester" style="width: 100%; height: 40px; font-size: 18px; padding: 10px; border: 1px solid #ddd; border-radius: 5px;">
+=======
+    <label for="nama_panitia">Semester</label>
+    <input type="text" id="nama_panitia" name="nama_panitia" placeholder="Semester" style="width: 100%; height: 40px; font-size: 18px; padding: 10px; border: 1px solid #ddd; border-radius: 5px;">
+>>>>>>> 528c133d59d60c5091aa05d1a319cc5f3336e52f
 </div>
 
 <!-- Rangkap Peran -->
 <div style="left: 507px; top: 400px; position: absolute; color: #1E1E1E; font-size: 24px; font-family: Gowun Dodum; font-weight: 400; word-wrap: break-word; margin-bottom: 20px;">
+<<<<<<< HEAD
     <label for="rangkap_peran">Rangkap Peran</label>
     <input type="text" id="rangkap_peran" name="rangkap_peran" placeholder="Misalnya, sebagai tim penilai merangkap sekretaris" style="width: 100%; height: 40px; font-size: 18px; padding: 10px; border: 1px solid #ddd; border-radius: 5px;">
+=======
+    <label for="rangkap_panitia">Rangkap Peran</label>
+    <input type="text" id="rangkap_panitia" name="rangkap_panitia" placeholder="Misalnya, sebagai tim penilai merangkap sekretaris" style="width: 100%; height: 40px; font-size: 18px; padding: 10px; border: 1px solid #ddd; border-radius: 5px;">
+>>>>>>> 528c133d59d60c5091aa05d1a319cc5f3336e52f
 </div>
 
 <!-- Prodi -->
 <div style="left: 507px; top: 500px; position: absolute; color: #1E1E1E; font-size: 24px; font-family: Gowun Dodum; font-weight: 400; word-wrap: break-word; margin-bottom: 20px;">
+<<<<<<< HEAD
     <label for="program_studi_institusi">Program Studi/Institusi</label>
     <input type="text" id="program_studi_institusi" name="program_studi_institusi" placeholder="Informatika/Universitas Muhammadiyah Malang" style="width: 100%; height: 40px; font-size: 18px; padding: 10px; border: 1px solid #ddd; border-radius: 5px;">
+=======
+    <label for="tahun_kepanitiaan">Program Studi/Institusi</label>
+    <input type="text" id="tahun_kepanitiaan" name="tahun_kepanitiaan" placeholder="Informatika/Universitas Muhammadiyah Malang" style="width: 100%; height: 40px; font-size: 18px; padding: 10px; border: 1px solid #ddd; border-radius: 5px;">
+>>>>>>> 528c133d59d60c5091aa05d1a319cc5f3336e52f
 </div>
 
 <!-- Keterangan Kegiatan -->
@@ -214,8 +242,13 @@ $(document).ready(function () {
 
 <!-- Tanggal Partisipasi  -->
 <div style="left: 507px; top: 697px; position: absolute; color: #1E1E1E; font-size: 24px; font-family: Gowun Dodum; font-weight: 400; word-wrap: break-word; margin-bottom: 30px;">
+<<<<<<< HEAD
     <label for="tanggal_partisipasi">Tanggal Partisipasi</label>
     <input type="text" id="tanggal_partisipasi" name="tanggal_partisipasi" placeholder="mm/dd/yyyy" style="width: 100%; height: 40px; font-size: 18px; padding: 10px; border: 1px solid #ddd; border-radius: 5px;">
+=======
+    <label for="tanggal_kegiatan">Tanggal Partisipasi</label>
+    <input type="text" id="tanggal_kegiatan" name="tanggal_kegiatan" placeholder="mm/dd/yyyy" style="width: 100%; height: 40px; font-size: 18px; padding: 10px; border: 1px solid #ddd; border-radius: 5px;">
+>>>>>>> 528c133d59d60c5091aa05d1a319cc5f3336e52f
 </div>
 
 <!-- Satuan Hasil Kegiatan -->

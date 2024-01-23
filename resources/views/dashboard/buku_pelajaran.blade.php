@@ -87,9 +87,13 @@ $(document).ready(function () {
   <div id="dashboardIcon" class="icon-container" style="left: 41px; top: 178px;">
       <i class="fas fa-tachometer-alt" style="color: #FEB1B3;"></i>
   </div>
+<<<<<<< HEAD
   <a href="/dashboard" style="text-decoration: none; color: inherit;">
     <div class="text-container" style="left: 100px; top: 184px; color: #1E1E1E;">Dashboard</div>
   </a>
+=======
+  <div class="text-container" style="left: 100px; top: 184px; color: #1E1E1E;">Dashboard</div>
+>>>>>>> 528c133d59d60c5091aa05d1a319cc5f3336e52f
 
  <!-- Perwakilan -->
 <a href="{{ route('perwakilan') }}" style="text-decoration: none; color: inherit;">
@@ -179,31 +183,55 @@ $(document).ready(function () {
 </div>
   
   <!-- Form Section -->
+<<<<<<< HEAD
   <form action="{{ route('submit_buku') }}" method="post" enctype="multipart/form-data">
+=======
+  <form action="{{ route('submit_form') }}" method="post">
+>>>>>>> 528c133d59d60c5091aa05d1a319cc5f3336e52f
     @csrf
 
     <!-- Jenis Buku -->
 <div style="left: 507px; top: 189px; position: absolute; color: #1E1E1E; font-size: 24px; font-family: Gowun Dodum; font-weight: 400; word-wrap: break-word; margin-bottom: 20px;">
+<<<<<<< HEAD
     <label for="jenis_buku">Jenis Buku</label>
     <input type="text" id="jenis_buku" name="jenis_buku" placeholder="Jenis Buku" style="width: 100%; height: 40px; font-size: 18px; padding: 10px; border: 1px solid #ddd; border-radius: 5px;">
+=======
+    <label for="peran_panitia">Jenis Buku</label>
+    <input type="text" id="peran_panitia" name="peran_panitia" placeholder="Jenis Buku" style="width: 100%; height: 40px; font-size: 18px; padding: 10px; border: 1px solid #ddd; border-radius: 5px;">
+>>>>>>> 528c133d59d60c5091aa05d1a319cc5f3336e52f
 </div>
 
 <!-- Judul Buku -->
 <div style="left: 507px; top: 298px; position: absolute; color: #1E1E1E; font-size: 24px; font-family: Gowun Dodum; font-weight: 400; word-wrap: break-word; margin-bottom: 20px;">
+<<<<<<< HEAD
     <label for="judul_buku">Judul Buku</label>
     <input type="text" id="judul_buku" name="judul_buku" placeholder="Judul" style="width: 100%; height: 40px; font-size: 18px; padding: 10px; border: 1px solid #ddd; border-radius: 5px;">
+=======
+    <label for="nama_panitia">Judul Buku</label>
+    <input type="text" id="nama_panitia" name="nama_panitia" placeholder="Judul" style="width: 100%; height: 40px; font-size: 18px; padding: 10px; border: 1px solid #ddd; border-radius: 5px;">
+>>>>>>> 528c133d59d60c5091aa05d1a319cc5f3336e52f
 </div>
 
 <!-- Jumlah Buku yang Ditulis -->
 <div style="left: 507px; top: 400px; position: absolute; color: #1E1E1E; font-size: 24px; font-family: Gowun Dodum; font-weight: 400; word-wrap: break-word; margin-bottom: 20px;">
+<<<<<<< HEAD
     <label for="jumlah_buku">Jumlah Buku yang Ditulis</label>
     <input type="text" id="jumlah_buku" name="jumlah_buku" placeholder="Dalam angka" style="width: 100%; height: 40px; font-size: 18px; padding: 10px; border: 1px solid #ddd; border-radius: 5px;">
+=======
+    <label for="rangkap_panitia">Jumlah Buku yang Ditulis</label>
+    <input type="text" id="rangkap_panitia" name="rangkap_panitia" placeholder="Dalam angka" style="width: 100%; height: 40px; font-size: 18px; padding: 10px; border: 1px solid #ddd; border-radius: 5px;">
+>>>>>>> 528c133d59d60c5091aa05d1a319cc5f3336e52f
 </div>
 
 <!-- Tanggal Terbit -->
 <div style="left: 507px; top: 500px; position: absolute; color: #1E1E1E; font-size: 24px; font-family: Gowun Dodum; font-weight: 400; word-wrap: break-word; margin-bottom: 20px;">
+<<<<<<< HEAD
     <label for="tanggal_terbit">Tanggal Terbit</label>
     <input type="text" id="tanggal_terbit" name="tanggal_terbit" placeholder="mm/dd/yyyy" style="width: 100%; height: 40px; font-size: 18px; padding: 10px; border: 1px solid #ddd; border-radius: 5px;">
+=======
+    <label for="tahun_kepanitiaan">Tanggal Terbit</label>
+    <input type="text" id="tahun_kepanitiaan" name="tahun_kepanitiaan" placeholder="mm/dd/yyyy" style="width: 100%; height: 40px; font-size: 18px; padding: 10px; border: 1px solid #ddd; border-radius: 5px;">
+>>>>>>> 528c133d59d60c5091aa05d1a319cc5f3336e52f
 </div>
 
 <!-- Keterangan Kegiatan
@@ -246,7 +274,10 @@ $(document).ready(function () {
 <div style="left: 507px; top: 1048px; position: absolute; color: #1E1E1E; font-size: 24px; font-family: Gowun Dodum; font-weight: 400; word-wrap: break-word; margin-bottom: 30px;">
     <label for="lampiran_sktmt">Lampiran (SKTMT):</label>
     <div style="position: relative;">
+<<<<<<< HEAD
         <input type="file" id="file_upload" name="file_upload" accept="image/*" style="display: none;">
+=======
+>>>>>>> 528c133d59d60c5091aa05d1a319cc5f3336e52f
         <input type="text" id="lampiran_sktmt" name="lampiran_sktmt" placeholder="Lampiran (SKTMT)" style="width: calc(100% - 40px); height: 40px; font-size: 18px; padding: 10px; border: 1px solid #ddd; border-radius: 5px; margin-bottom: 10px;">
 
         <!-- Icon Font Awesome untuk unggah file -->
@@ -255,6 +286,10 @@ $(document).ready(function () {
         </label>
 
         <!-- Input untuk unggah file (hidden) -->
+<<<<<<< HEAD
+=======
+        <input type="file" id="file_upload" name="file_upload" accept="image/*" style="display: none;">
+>>>>>>> 528c133d59d60c5091aa05d1a319cc5f3336e52f
     </div>
 </div>
 

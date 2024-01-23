@@ -1,11 +1,15 @@
 <?php
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 528c133d59d60c5091aa05d1a319cc5f3336e52f
 // Letakkan file ini di direktori 'app/Http/Controllers'
 
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+<<<<<<< HEAD
 use Illuminate\Support\Facades\DB;
 use App\Http\Controllers\Controller;
 use App\Models\Biodata;
@@ -16,6 +20,8 @@ use App\Models\Penghargaan;
 use App\Models\PertemuanIlmiah;
 use App\Models\Sport;
 use App\Models\TimPenilaian;
+=======
+>>>>>>> 528c133d59d60c5091aa05d1a319cc5f3336e52f
 
 class dashController extends Controller
 {
@@ -58,15 +64,20 @@ class dashController extends Controller
     public function biodata()
     {
         // Logika dan pengolahan data untuk rute /biodata
+<<<<<<< HEAD
         $userId = auth()->id();
         $biodata = Biodata::where('user_id', $userId)->first();
         return view('dashboard.biodata', [
             'userData' => $biodata
         ]);
+=======
+        return view('dashboard.biodata');
+>>>>>>> 528c133d59d60c5091aa05d1a319cc5f3336e52f
     }
 
     public function dataSaya()
     {
+<<<<<<< HEAD
         $userId = auth()->id();
         
         // Specify the number of items per page
@@ -100,3 +111,10 @@ class dashController extends Controller
         ]);
     }
 }
+=======
+        // Logika dan pengolahan data untuk rute /data-saya
+        return view('dashboard.data_saya');
+    }
+}
+
+>>>>>>> 528c133d59d60c5091aa05d1a319cc5f3336e52f

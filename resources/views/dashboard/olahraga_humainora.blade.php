@@ -87,9 +87,13 @@ $(document).ready(function () {
   <div id="dashboardIcon" class="icon-container" style="left: 41px; top: 178px;">
       <i class="fas fa-tachometer-alt" style="color: #FEB1B3;"></i>
   </div>
+<<<<<<< HEAD
   <a href="/dashboard" style="text-decoration: none; color: inherit;">
     <div class="text-container" style="left: 100px; top: 184px; color: #1E1E1E;">Dashboard</div>
   </a>
+=======
+  <div class="text-container" style="left: 100px; top: 184px; color: #1E1E1E;">Dashboard</div>
+>>>>>>> 528c133d59d60c5091aa05d1a319cc5f3336e52f
 
  <!-- Perwakilan -->
 <a href="{{ route('perwakilan') }}" style="text-decoration: none; color: inherit;">
@@ -179,19 +183,33 @@ $(document).ready(function () {
 </div>
   
   <!-- Form Section -->
+<<<<<<< HEAD
   <form action="{{ route('submit_sport') }}" method="post" enctype="multipart/form-data">
+=======
+  <form action="{{ route('submit_form') }}" method="post">
+>>>>>>> 528c133d59d60c5091aa05d1a319cc5f3336e52f
     @csrf
 
     <!-- Bidang Prestasi -->
 <div style="left: 507px; top: 189px; position: absolute; color: #1E1E1E; font-size: 24px; font-family: Gowun Dodum; font-weight: 400; word-wrap: break-word; margin-bottom: 20px;">
+<<<<<<< HEAD
     <label for="bidang_prestasi">Bidang Prestasi</label>
     <input type="text" id="bidang_prestasi" name="bidang_prestasi" placeholder="Jenis Bidang" style="width: 100%; height: 40px; font-size: 18px; padding: 10px; border: 1px solid #ddd; border-radius: 5px;">
+=======
+    <label for="peran_panitia">Bidang Prestasi</label>
+    <input type="text" id="peran_panitia" name="peran_panitia" placeholder="Jenis Bidang" style="width: 100%; height: 40px; font-size: 18px; padding: 10px; border: 1px solid #ddd; border-radius: 5px;">
+>>>>>>> 528c133d59d60c5091aa05d1a319cc5f3336e52f
 </div>
 
 <!-- Tingkat Prestasi  -->
 <div style="left: 507px; top: 298px; position: absolute; color: #1E1E1E; font-size: 24px; font-family: Gowun Dodum; font-weight: 400; word-wrap: break-word; margin-bottom: 20px;">
+<<<<<<< HEAD
     <label for="tingkat_prestasi">Tingkat Prestasi</label>
     <input type="text" id="tingkat_prestasi" name="tingkat_prestasi" placeholder="Internasional, Nasional, Regional, dll." style="width: 100%; height: 40px; font-size: 18px; padding: 10px; border: 1px solid #ddd; border-radius: 5px;">
+=======
+    <label for="nama_panitia">Tingkat Prestasi</label>
+    <input type="text" id="nama_panitia" name="nama_panitia" placeholder="Internasional, Nasional, Regional, dll." style="width: 100%; height: 40px; font-size: 18px; padding: 10px; border: 1px solid #ddd; border-radius: 5px;">
+>>>>>>> 528c133d59d60c5091aa05d1a319cc5f3336e52f
 </div>
 
 <!-- Prestasi yang Dicapai
@@ -202,14 +220,24 @@ $(document).ready(function () {
 
 <!-- Tanggal Pencapaian -->
 <div style="left: 507px; top: 400px; position: absolute; color: #1E1E1E; font-size: 24px; font-family: Gowun Dodum; font-weight: 400; word-wrap: break-word; margin-bottom: 20px;">
+<<<<<<< HEAD
     <label for="tanggal_pencapaian">Tanggal Pencapaian</label>
     <input type="text" id="tanggal_pencapaian" name="tanggal_pencapaian" placeholder="mm/dd/yyyy" style="width: 100%; height: 40px; font-size: 18px; padding: 10px; border: 1px solid #ddd; border-radius: 5px;">
+=======
+    <label for="tahun_kepanitiaan">Tanggal Pencapaian</label>
+    <input type="text" id="tahun_kepanitiaan" name="tahun_kepanitiaan" placeholder="mm/dd/yyyy" style="width: 100%; height: 40px; font-size: 18px; padding: 10px; border: 1px solid #ddd; border-radius: 5px;">
+>>>>>>> 528c133d59d60c5091aa05d1a319cc5f3336e52f
 </div>
 
 <!-- Prestasi yang Dicapai -->
 <div style="left: 507px; top: 500px; position: absolute; color: #1E1E1E; font-size: 24px; font-family: Gowun Dodum; font-weight: 400; word-wrap: break-word; margin-bottom: 20px;">
+<<<<<<< HEAD
     <label for="prestasi_yang_dicapai">Prestasi yang Dicapai</label>
     <textarea id="prestasi_yang_dicapai" name="prestasi_yang_dicapai" rows="4" placeholder="Deskripsi kegiatan" style="width: 100%; font-size: 18px; padding: 10px; border: 1px solid #ddd; border-radius: 5px;"></textarea>
+=======
+    <label for="keterangan_kegiatan">Prestasi yang Dicapai</label>
+    <textarea id="keterangan_kegiatan" name="keterangan_kegiatan" rows="4" placeholder="Deskripsi kegiatan" style="width: 100%; font-size: 18px; padding: 10px; border: 1px solid #ddd; border-radius: 5px;"></textarea>
+>>>>>>> 528c133d59d60c5091aa05d1a319cc5f3336e52f
 </div>
 
 <!-- Tanggal Kegiatan -->

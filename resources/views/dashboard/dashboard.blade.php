@@ -103,9 +103,13 @@
   <div class="icon-container" style="left: 41px; top: 178px;">
         <i class="fas fa-tachometer-alt" style="color: #FF5054;"></i>
     </div>
+<<<<<<< HEAD
     <a href="/dashboard" style="text-decoration: none; color: inherit;">
         <div class="text-container" style="left: 100px; top: 184px; color: #FF5054;">Dashboard</div>
     </a>
+=======
+    <div class="text-container" style="left: 100px; top: 184px; color: #FF5054;">Dashboard</div>
+>>>>>>> 528c133d59d60c5091aa05d1a319cc5f3336e52f
 
     <!-- Icon dan teks Keanggotaan -->
 <!-- Icon dan teks Keanggotaan -->
@@ -143,7 +147,11 @@
 </a>
 
 <!-- Penghargaan/Tanda Jasa -->
+<<<<<<< HEAD
 <a style="text-decoration: none; color: inherit;">
+=======
+<a href="{{ route('penghargaan_tanda_jasa') }}" style="text-decoration: none; color: inherit;">
+>>>>>>> 528c133d59d60c5091aa05d1a319cc5f3336e52f
     <div class="icon-container" style="left: 41px; top: 477px;">
         <i class="fas fa-award" style="color: #FEB1B3;"></i>
     </div>
@@ -220,7 +228,11 @@
     <div style="width: 28px; height: 21.27px; left: 0px; top: 3.87px; position: absolute; background: #FEB1B3"></div>
   </div>
   <div style="left: 828px; top: 255px; position: absolute; color: #323232; font-size: 23px; font-family: Gowun Dodum; font-weight: 400; word-wrap: break-word">
+<<<<<<< HEAD
         {{$userData->nip}}
+=======
+        196207161990031004
+>>>>>>> 528c133d59d60c5091aa05d1a319cc5f3336e52f
     </div>
   <div style="width: 28px; height: 28px; left: 775px; top: 331px; position: absolute; justify-content: center; align-items: center; display: inline-flex">
   </div>

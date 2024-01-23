@@ -66,4 +66,8 @@ class Kernel extends HttpKernel
         'verified' => \Illuminate\Auth\Middleware\EnsureEmailIsVerified::class,
     ];
     
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 528c133d59d60c5091aa05d1a319cc5f3336e52f

@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> 528c133d59d60c5091aa05d1a319cc5f3336e52f
 <div style="width: 1440px; height: 1024px; position: relative; background: white">
   <img style="width: 234px; height: 142px; left: 51px; top: 20px; position: absolute" src="{{ asset('images/logo umm.jpg') }}" />
   <img style="width: 180px; height: 92px; left: 325px; top: 32px; position: absolute; box-shadow: 0px 4px 1px rgba(0, 0, 0, 0.05)" src="{{ asset('images/Logo prestasi.png') }}" />

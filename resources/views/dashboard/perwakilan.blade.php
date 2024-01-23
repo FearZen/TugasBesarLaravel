@@ -87,9 +87,13 @@ $(document).ready(function () {
   <div id="dashboardIcon" class="icon-container" style="left: 41px; top: 178px;">
       <i class="fas fa-tachometer-alt" style="color: #FEB1B3;"></i>
   </div>
+<<<<<<< HEAD
   <a href="/dashboard" style="text-decoration: none; color: inherit;">
     <div class="text-container" style="left: 100px; top: 184px; color: #1E1E1E;">Dashboard</div>
   </a>
+=======
+  <div class="text-container" style="left: 100px; top: 184px; color: #1E1E1E;">Dashboard</div>
+>>>>>>> 528c133d59d60c5091aa05d1a319cc5f3336e52f
 
  <!-- Perwakilan -->
 <a href="{{ route('perwakilan') }}" style="text-decoration: none; color: inherit;">
@@ -179,31 +183,51 @@ $(document).ready(function () {
 </div>
   
   <!-- Form Section -->
+<<<<<<< HEAD
   <form action="{{ route('submit_perwakilan') }}" method="post" enctype="multipart/form-data">
+=======
+  <form action="{{ route('submit_form') }}" method="post">
+>>>>>>> 528c133d59d60c5091aa05d1a319cc5f3336e52f
     @csrf
 
     <!-- Jenis Perwakilan -->
 <div style="left: 507px; top: 189px; position: absolute; color: #1E1E1E; font-size: 24px; font-family: Gowun Dodum; font-weight: 400; word-wrap: break-word; margin-bottom: 20px;">
     <label for="peran_panitia">Jenis Perwakilan</label>
+<<<<<<< HEAD
     <input type="text" id="jenis_perwakilan" name="jenis_perwakilan" placeholder="Lembaga/Pemerintahan/..." style="width: 100%; height: 40px; font-size: 18px; padding: 10px; border: 1px solid #ddd; border-radius: 5px;">
+=======
+    <input type="text" id="peran_panitia" name="peran_panitia" placeholder="Lembaga/Pemerintahan/..." style="width: 100%; height: 40px; font-size: 18px; padding: 10px; border: 1px solid #ddd; border-radius: 5px;">
+>>>>>>> 528c133d59d60c5091aa05d1a319cc5f3336e52f
 </div>
 
 <!-- Peran -->
 <div style="left: 507px; top: 298px; position: absolute; color: #1E1E1E; font-size: 24px; font-family: Gowun Dodum; font-weight: 400; word-wrap: break-word; margin-bottom: 20px;">
     <label for="nama_panitia">Peran</label>
+<<<<<<< HEAD
     <input type="text" id="peran" name="peran" placeholder="Ketua/Wakil Ketua" style="width: 100%; height: 40px; font-size: 18px; padding: 10px; border: 1px solid #ddd; border-radius: 5px;">
+=======
+    <input type="text" id="nama_panitia" name="nama_panitia" placeholder="Ketua/Wakil Ketua" style="width: 100%; height: 40px; font-size: 18px; padding: 10px; border: 1px solid #ddd; border-radius: 5px;">
+>>>>>>> 528c133d59d60c5091aa05d1a319cc5f3336e52f
 </div>
 
 <!-- Tahun Kepanitiaan -->
 <div style="left: 507px; top: 400px; position: absolute; color: #1E1E1E; font-size: 24px; font-family: Gowun Dodum; font-weight: 400; word-wrap: break-word; margin-bottom: 20px;">
     <label for="rangkap_panitia">Tahun Kepanitiaan</label>
+<<<<<<< HEAD
     <input type="text" id="tahun_kepanitiaan" name="tahun_kepanitiaan" placeholder="2023" style="width: 100%; height: 40px; font-size: 18px; padding: 10px; border: 1px solid #ddd; border-radius: 5px;">
+=======
+    <input type="text" id="rangkap_panitia" name="rangkap_panitia" placeholder="2023" style="width: 100%; height: 40px; font-size: 18px; padding: 10px; border: 1px solid #ddd; border-radius: 5px;">
+>>>>>>> 528c133d59d60c5091aa05d1a319cc5f3336e52f
 </div>
 
 <!-- Tanggal Kegiatan -->
 <div style="left: 507px; top: 500px; position: absolute; color: #1E1E1E; font-size: 24px; font-family: Gowun Dodum; font-weight: 400; word-wrap: break-word; margin-bottom: 20px;">
     <label for="tahun_kepanitiaan">Tanggal Kegiatan</label>
+<<<<<<< HEAD
     <input type="text" id="tanggal_kepanitiaan" name="tanggal_kepanitiaan" placeholder="Tanggal Kegiatan" style="width: 100%; height: 40px; font-size: 18px; padding: 10px; border: 1px solid #ddd; border-radius: 5px;">
+=======
+    <input type="text" id="tahun_kepanitiaan" name="tahun_kepanitiaan" placeholder="Tanggal Kegiatan" style="width: 100%; height: 40px; font-size: 18px; padding: 10px; border: 1px solid #ddd; border-radius: 5px;">
+>>>>>>> 528c133d59d60c5091aa05d1a319cc5f3336e52f
 </div>
 
 <!-- Keterangan Kegiatan -->
@@ -246,16 +270,29 @@ $(document).ready(function () {
 <div style="left: 507px; top: 1188px; position: absolute; color: #1E1E1E; font-size: 24px; font-family: Gowun Dodum; font-weight: 400; word-wrap: break-word; margin-bottom: 30px;">
     <label for="lampiran_sktmt">Lampiran (SKTMT):</label>
     <div style="position: relative;">
+<<<<<<< HEAD
         <input type="file" id="file_upload" name="file_upload" accept="image/*" style="display: none;">
         <input type="text" id="lampiran_sk_kegiatan" name="lampiran_sk_kegiatan" placeholder="Lampiran (SKTMT)" style="width: calc(100% - 40px); height: 40px; font-size: 18px; padding: 10px; border: 1px solid #ddd; border-radius: 5px; margin-bottom: 10px;">
+=======
+        <input type="text" id="lampiran_sktmt" name="lampiran_sktmt" placeholder="Lampiran (SKTMT)" style="width: calc(100% - 40px); height: 40px; font-size: 18px; padding: 10px; border: 1px solid #ddd; border-radius: 5px; margin-bottom: 10px;">
+>>>>>>> 528c133d59d60c5091aa05d1a319cc5f3336e52f
 
         <!-- Icon Font Awesome untuk unggah file -->
         <label for="file_upload" style="position: absolute; right: 35px; top: 50%; transform: translateY(-50%); cursor: pointer;">
             <i class="fa fa-upload" style="font-size: 24px; color: #1E1E1E;"></i>
         </label>
+<<<<<<< HEAD
         <!-- Input untuk unggah file (hidden) -->
     </div>
 </div>
+=======
+
+        <!-- Input untuk unggah file (hidden) -->
+        <input type="file" id="file_upload" name="file_upload" accept="image/*" style="display: none;">
+    </div>
+</div>
+
+>>>>>>> 528c133d59d60c5091aa05d1a319cc5f3336e52f
     <!-- Your existing submit button -->
     <div style="width: 300px; height: 80px; left: 1202px; top: 1494px; position: absolute;">
     <button type="submit" style="background-color: #CB4649; color: white; padding: 15px 30px; font-size: 20px; border: none; border-radius: 20px; cursor: pointer; display: flex; align-items: center;">

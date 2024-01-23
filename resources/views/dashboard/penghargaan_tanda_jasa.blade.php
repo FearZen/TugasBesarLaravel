@@ -87,9 +87,13 @@ $(document).ready(function () {
   <div id="dashboardIcon" class="icon-container" style="left: 41px; top: 178px;">
       <i class="fas fa-tachometer-alt" style="color: #FEB1B3;"></i>
   </div>
+<<<<<<< HEAD
   <a href="/dashboard" style="text-decoration: none; color: inherit;">
     <div class="text-container" style="left: 100px; top: 184px; color: #1E1E1E;">Dashboard</div>
   </a>
+=======
+  <div class="text-container" style="left: 100px; top: 184px; color: #1E1E1E;">Dashboard</div>
+>>>>>>> 528c133d59d60c5091aa05d1a319cc5f3336e52f
 
  <!-- Perwakilan -->
 <a href="{{ route('perwakilan') }}" style="text-decoration: none; color: inherit;">
@@ -179,25 +183,44 @@ $(document).ready(function () {
 </div>
   
   <!-- Form Section -->
+<<<<<<< HEAD
   <form action="{{ route('submit_penghargaan') }}" method="post" enctype="multipart/form-data">
+=======
+  <form action="{{ route('submit_form') }}" method="post">
+>>>>>>> 528c133d59d60c5091aa05d1a319cc5f3336e52f
     @csrf
 
     <!-- Jenis Penghargaan/Tanda Jasa -->
 <div style="left: 507px; top: 189px; position: absolute; color: #1E1E1E; font-size: 24px; font-family: Gowun Dodum; font-weight: 400; word-wrap: break-word; margin-bottom: 20px;">
+<<<<<<< HEAD
     <label for="jenis_penghargaan">Jenis Penghargaan/Tanda Jasa</label>
     <input type="text" id="jenis_penghargaan" name="jenis_penghargaan" placeholder="Satya Lencana 30 tahun/Satya Lencana 20 Tahun/dll" style="width: 100%; height: 40px; font-size: 18px; padding: 10px; border: 1px solid #ddd; border-radius: 5px;">
+=======
+    <label for="peran_panitia">Jenis Penghargaan/Tanda Jasa</label>
+    <input type="text" id="peran_panitia" name="peran_panitia" placeholder="Satya Lencana 30 tahun/Satya Lencana 20 Tahun/dll" style="width: 100%; height: 40px; font-size: 18px; padding: 10px; border: 1px solid #ddd; border-radius: 5px;">
+>>>>>>> 528c133d59d60c5091aa05d1a319cc5f3336e52f
 </div>
 
 <!-- Tingkat Penghargaan/Tanda Jasan -->
 <div style="left: 507px; top: 298px; position: absolute; color: #1E1E1E; font-size: 24px; font-family: Gowun Dodum; font-weight: 400; word-wrap: break-word; margin-bottom: 20px;">
+<<<<<<< HEAD
     <label for="tingkat_penghargaan">Tingkat Penghargaan/Tanda Jasa</label>
     <input type="text" id="tingkat_penghargaan" name="tingkat_penghargaan" placeholder="Internasional, Nasional, Regional, Perguruan Tinggi, dll." style="width: 100%; height: 40px; font-size: 18px; padding: 10px; border: 1px solid #ddd; border-radius: 5px;">
+=======
+    <label for="nama_panitia">Tingkat Penghargaan/Tanda Jasa</label>
+    <input type="text" id="nama_panitia" name="nama_panitia" placeholder="Internasional, Nasional, Regional, Perguruan Tinggi, dll." style="width: 100%; height: 40px; font-size: 18px; padding: 10px; border: 1px solid #ddd; border-radius: 5px;">
+>>>>>>> 528c133d59d60c5091aa05d1a319cc5f3336e52f
 </div>
 
 <!-- Jumlah Penghargaan/Tanda Jasa -->
 <div style="left: 507px; top: 400px; position: absolute; color: #1E1E1E; font-size: 24px; font-family: Gowun Dodum; font-weight: 400; word-wrap: break-word; margin-bottom: 20px;">
+<<<<<<< HEAD
     <label for="jumlah_penghargaan">Jumlah Penghargaan/Tanda Jasa</label>
     <input type="text" id="jumlah_penghargaan" name="jumlah_penghargaan" placeholder="Dalam Angka" style="width: 100%; height: 40px; font-size: 18px; padding: 10px; border: 1px solid #ddd; border-radius: 5px;">
+=======
+    <label for="rangkap_panitia">Jumlah Penghargaan/Tanda Jasa</label>
+    <input type="text" id="rangkap_panitia" name="rangkap_panitia" placeholder="Dalam Angka" style="width: 100%; height: 40px; font-size: 18px; padding: 10px; border: 1px solid #ddd; border-radius: 5px;">
+>>>>>>> 528c133d59d60c5091aa05d1a319cc5f3336e52f
 </div>
 
 <!-- Peran -->
@@ -212,18 +235,30 @@ $(document).ready(function () {
     <textarea id="keterangan_kegiatan" name="keterangan_kegiatan" rows="4" placeholder="Deskripsi Penghargaan/Tanda Jasa" style="width: 100%; font-size: 18px; padding: 10px; border: 1px solid #ddd; border-radius: 5px;"></textarea>
 </div>
 
+<<<<<<< HEAD
+=======
+<!-- Tanggal Penerimaan  -->
+<div style="left: 507px; top: 737px; position: absolute; color: #1E1E1E; font-size: 24px; font-family: Gowun Dodum; font-weight: 400; word-wrap: break-word; margin-bottom: 30px;">
+    <label for="tanggal_kegiatan">Tanggal Penerimaan</label>
+    <input type="text" id="tanggal_kegiatan" name="tanggal_kegiatan" placeholder="mm/dd/yyyy" style="width: 100%; height: 40px; font-size: 18px; padding: 10px; border: 1px solid #ddd; border-radius: 5px;">
+</div>
+
+>>>>>>> 528c133d59d60c5091aa05d1a319cc5f3336e52f
 <!-- Satuan Hasil Kegiatan -->
 <div style="left: 507px; top: 640px; position: absolute; color: #1E1E1E; font-size: 24px; font-family: Gowun Dodum; font-weight: 400; word-wrap: break-word; margin-bottom: 30px;">
     <label for="satuan_hasil_kegiatan">Satuan Hasil Kegiatan (SKS/tahun):</label>
     <input type="text" id="satuan_hasil_kegiatan" name="satuan_hasil_kegiatan" placeholder="SKS/tahun" style="width: 100%; height: 40px; font-size: 18px; padding: 10px; border: 1px solid #ddd; border-radius: 5px;">
 </div>
 
+<<<<<<< HEAD
 <!-- Tanggal Penerimaan  -->
 <div style="left: 507px; top: 737px; position: absolute; color: #1E1E1E; font-size: 24px; font-family: Gowun Dodum; font-weight: 400; word-wrap: break-word; margin-bottom: 30px;">
     <label for="tanggal_penerimaan">Tanggal Penerimaan</label>
     <input type="text" id="tanggal_penerimaan" name="tanggal_penerimaan" placeholder="mm/dd/yyyy" style="width: 100%; height: 40px; font-size: 18px; padding: 10px; border: 1px solid #ddd; border-radius: 5px;">
 </div>
 
+=======
+>>>>>>> 528c133d59d60c5091aa05d1a319cc5f3336e52f
 <!-- Jumlah Volume Kegiatan -->
 <div style="left: 507px; top: 837px; position: absolute; color: #1E1E1E; font-size: 24px; font-family: Gowun Dodum; font-weight: 400; word-wrap: break-word; margin-bottom: 30px;">
     <label for="jumlah_volume_kegiatan">Jumlah Volume Kegiatan:</label>
@@ -246,15 +281,24 @@ $(document).ready(function () {
 <div style="left: 507px; top: 1188px; position: absolute; color: #1E1E1E; font-size: 24px; font-family: Gowun Dodum; font-weight: 400; word-wrap: break-word; margin-bottom: 30px;">
     <label for="lampiran_sktmt">Lampiran (SKTMT):</label>
     <div style="position: relative;">
+<<<<<<< HEAD
         <input type="file" id="file_upload" name="file_upload" accept="image/*" style="display: none;">
+=======
+>>>>>>> 528c133d59d60c5091aa05d1a319cc5f3336e52f
         <input type="text" id="lampiran_sktmt" name="lampiran_sktmt" placeholder="Lampiran (SKTMT)" style="width: calc(100% - 40px); height: 40px; font-size: 18px; padding: 10px; border: 1px solid #ddd; border-radius: 5px; margin-bottom: 10px;">
 
         <!-- Icon Font Awesome untuk unggah file -->
         <label for="file_upload" style="position: absolute; right: 35px; top: 50%; transform: translateY(-50%); cursor: pointer;">
             <i class="fa fa-upload" style="font-size: 24px; color: #1E1E1E;"></i>
         </label>
+<<<<<<< HEAD
         
         <!-- Input untuk unggah file (hidden) -->
+=======
+
+        <!-- Input untuk unggah file (hidden) -->
+        <input type="file" id="file_upload" name="file_upload" accept="image/*" style="display: none;">
+>>>>>>> 528c133d59d60c5091aa05d1a319cc5f3336e52f
     </div>
 </div>
 
