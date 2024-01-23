@@ -147,11 +147,7 @@
 </a>
 
 <!-- Penghargaan/Tanda Jasa -->
-<<<<<<< HEAD
 <a style="text-decoration: none; color: inherit;">
-=======
-<a href="{{ route('penghargaan_tanda_jasa') }}" style="text-decoration: none; color: inherit;">
->>>>>>> 528c133d59d60c5091aa05d1a319cc5f3336e52f
     <div class="icon-container" style="left: 41px; top: 477px;">
         <i class="fas fa-award" style="color: #FEB1B3;"></i>
     </div>
