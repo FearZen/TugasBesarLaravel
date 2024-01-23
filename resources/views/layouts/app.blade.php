@@ -7,6 +7,7 @@
     <title>@yield('title', 'Tugas Besar Web')</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-xxuHwMP6oQEMMcA8/1AapKGTr83xBSO2+/Y1xYNVgsJr5XcV0vvNS1XuxgNOjXXKaCJb8a5jJu6JdOS6DNUDGA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <script src="{{ asset('js/clearInput.js') }}"></script>
@@ -29,14 +30,14 @@
             display: none; /* Initially hide the dropdown */
         }
     </style>
-    <script>
+    <!-- <script>
     document.addEventListener('DOMContentLoaded', function () {
         document.getElementById('keanggotaanIcon').addEventListener('click', function () {
             var dropdown = document.getElementById('dropdownKeanggotaan');
             dropdown.style.display = (dropdown.style.display === 'block') ? 'none' : 'block';
         });
     });
-</script>
+</script> -->
 </head>
 <body>
     <div class="container">
@@ -49,21 +50,21 @@
         <div class="text-container" style="left: 100px; top: 249px; color: #1E1E1E;">Keanggotaan</div> -->
 
         <!-- Dropdown Keanggotaan -->
-        <div id="dropdownKeanggotaan" class="dropdown" style="position: absolute; left: 100px; top: 288px; display: none;">
+        <!-- <div id="dropdownKeanggotaan" class="dropdown" style="position: absolute; left: 100px; top: 288px; display: none;"> -->
             <!-- Dropdown content -->
-            <div style="color: #FF5054; font-size: 24px; font-family: Gowun Dodum; font-weight: 400; word-wrap: break-word">Perguruan Tinggi</div>
+            <!-- <div style="color: #FF5054; font-size: 24px; font-family: Gowun Dodum; font-weight: 400; word-wrap: break-word">Perguruan Tinggi</div> -->
             <!-- Add more dropdown items as needed -->
-        </div>
+        <!-- </div> -->
     </div>
 
     <!-- Add the following lines for your dropdown -->
-    <script>
+    <!-- <script>
         document.addEventListener('DOMContentLoaded', function () {
             document.getElementById('keanggotaanIcon').addEventListener('click', function () {
                 var dropdown = document.getElementById('dropdownKeanggotaan');
                 dropdown.style.display = (dropdown.style.display === 'block') ? 'none' : 'block';
             });
         });
-    </script>
+    </script> -->
 </body>
 </html>

@@ -20,6 +20,16 @@
         <!-- Formulir Email dan Password -->
         <form id="loginForm" method="POST" action="{{ route('login') }}" class="form-container">
             @csrf
+            @if ($errors->any())
+                <div style="color: red; margin-bottom: 10px;">
+                    <strong>Oops! Terdapat kesalahan pada formulir:</strong>
+                    <ul>
+                        @foreach ($errors->all() as $error)
+                            <li>{{ $error }}</li>
+                        @endforeach
+                    </ul>
+                </div>
+            @endif
             <div>Email</div>
             <input id="email" type="email" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
             <div id="clearEmail" class="clear-button">
